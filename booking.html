@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Apex Barbers</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Lux<span>BYTE</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="booking.html" class="active">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Secure Your <span>Chair</span></h2>
+        <div class="booking-wrapper">
+            
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="serviceSelect">Select Service</label>
+                    <select id="serviceSelect" required>
+                        <option value="" disabled selected>Choose a service</option>
+                        <option value="Classic Haircut|$35">Classic Haircut - $35</option>
+                        <option value="Beard Sculpting|$25">Beard Sculpting - $25</option>
+                        <option value="Hot Towel Shave|$40">Hot Towel Shave - $40</option>
+                        <option value="The Full Royal Ritual|$70">The Full Royal Ritual - $70</option>
+                        <option value="Hair Washing|$15">Hair Washing - $15</option>
+                        <option value="Hair Grooming|$80">VIP Grooming - $80</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="barberSelect">Choose Barber</label>
+                    <select id="barberSelect" required>
+                        <option value="" disabled selected>Choose a specialist</option>
+                        <option value="Marcus Vance">Marcus Vance</option>
+                        <option value="Alex Reed">Alex Reed</option>
+                        <option value="Carlos Santana">Carlos Santana</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bookDate">Date</label>
+                    <input type="date" id="bookDate" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Confirm Booking</button>
+            </form>
+
+            <div class="summary-box">
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Appointment Summary</h3>
+                <p id="sumName">Name: ---</p>
+                <p id="sumService">Service: ---</p>
+                <p id="sumBarber">Barber: ---</p>
+                <p id="sumDate">Date: ---</p>
+                <h4 style="margin-top: 20px; border-top: 1px dashed #2c2c2e; padding-top: 15px;" id="sumTotal">Total Cost: $0</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Apex Barbershop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
